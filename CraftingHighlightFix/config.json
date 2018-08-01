@@ -1,0 +1,83 @@
+{
+  "minMcmVersion": 2,
+  "modName": "CraftingHighlightFix",
+  "displayName": "物品製作高亮顯示修復",
+  "content": [
+    {
+      "text": "<font size='30'><p align='center'>物品製作高亮顯示修復</p></font>",
+      "html": true,
+      "type": "text"
+    },
+    {
+      "text": "關於",
+      "type": "section"
+    },
+    {
+      "text": "物品製作高亮顯示修復提供了選項來停用工作台上的高亮顯示。",
+      "type": "text"
+    },
+    { "type": "spacer" },
+    {
+      "text": "選項",
+      "type": "section"
+    },
+    {
+      "id": "bDisableCraftingHighlights:Main",
+      "text": "停用物品製作高亮顯示",
+      "type": "switcher",
+      "help": "控制是否在工作台上停用高亮顯示。",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+      },
+      "action": {
+        "type": "CallExternalFunction",
+        "plugin": "crafting_highlight_fix",
+        "function": "OnMCMSettingUpdate"
+      }
+    },
+    {
+      "id": "bDisableInventoryMenuHighlights:Main",
+      "text": "停用交易菜單高亮顯示",
+      "type": "switcher",
+      "help": "制是否在交易/交換/容器菜單中禁用高亮顯示。",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+      },
+      "action": {
+        "type": "CallExternalFunction",
+        "plugin": "crafting_highlight_fix",
+        "function": "OnMCMSettingUpdate"
+      }
+    },
+    {
+      "id": "iPowerArmorShaderMode:Main",
+      "text": "動力裝甲高亮顯示模式",
+      "type": "dropdown",
+      "help": "控制動力裝甲工作台中使用的高亮顯示類型。",
+      "valueOptions": {
+        "sourceType": "ModSettingInt",
+        "options": ["完全關閉", "開啟（原版）", "只有輪廓"]
+      },
+      "action": {
+        "type": "CallExternalFunction",
+        "plugin": "crafting_highlight_fix",
+        "function": "OnMCMSettingUpdate"
+      }
+    },
+    {
+      "id": "iRobotWorkbenchShaderMode:Main",
+      "text": "機器人工作台高亮顯示模式",
+      "type": "dropdown",
+      "help": "控制機器人工作台中使用的高亮顯示類型。",
+      "valueOptions": {
+        "sourceType": "ModSettingInt",
+        "options": ["完全關閉", "開啟（原版）", "只有輪廓"]
+      },
+      "action": {
+        "type": "CallExternalFunction",
+        "plugin": "crafting_highlight_fix",
+        "function": "OnMCMSettingUpdate"
+      }
+    }
+  ]
+}
