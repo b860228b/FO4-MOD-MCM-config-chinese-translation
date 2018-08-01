@@ -1,31 +1,31 @@
 {
   "minMcmVersion": 2,
   "modName": "CraftingHighlightFix",
-  "displayName": "物品製作高亮顯示修復",
+  "displayName": "Crafting Highlight Fix",
   "content": [
     {
-      "text": "<font size='30'><p align='center'>物品製作高亮顯示修復</p></font>",
+      "text": "<font size='30'><p align='center'>Crafting Highlight Fix</p></font>",
       "html": true,
       "type": "text"
     },
     {
-      "text": "關於",
+      "text": "About",
       "type": "section"
     },
     {
-      "text": "物品製作高亮顯示修復提供了選項來停用工作台上的高亮顯示。",
+      "text": "Crafting Highlight Fix provides options to disable the highlights at workbenches.",
       "type": "text"
     },
     { "type": "spacer" },
     {
-      "text": "選項",
+      "text": "Options",
       "type": "section"
     },
     {
       "id": "bDisableCraftingHighlights:Main",
-      "text": "停用物品製作高亮顯示",
+      "text": "Disable Crafting Highlights",
       "type": "switcher",
-      "help": "控制是否在工作台上停用高亮顯示。",
+      "help": "Controls whether highlights will be disabled at workbenches.",
       "valueOptions": {
         "sourceType": "ModSettingBool"
       },
@@ -37,9 +37,9 @@
     },
     {
       "id": "bDisableInventoryMenuHighlights:Main",
-      "text": "停用交易菜單高亮顯示",
+      "text": "Disable Trade Menu Highlights",
       "type": "switcher",
-      "help": "制是否在交易/交換/容器菜單中禁用高亮顯示。",
+      "help": "Controls whether highlights will be disabled in the trade/barter/container menu.",
       "valueOptions": {
         "sourceType": "ModSettingBool"
       },
@@ -51,12 +51,12 @@
     },
     {
       "id": "iPowerArmorShaderMode:Main",
-      "text": "動力裝甲高亮顯示模式",
+      "text": "Power Armor Highlight Mode",
       "type": "dropdown",
-      "help": "控制動力裝甲工作台中使用的高亮顯示類型。",
+      "help": "Controls the type of highlight used in the Power Armor station.",
       "valueOptions": {
         "sourceType": "ModSettingInt",
-        "options": ["完全關閉", "開啟（原版）", "只有輪廓"]
+        "options": ["Completely Off", "On (Vanilla)", "Outline Only"]
       },
       "action": {
         "type": "CallExternalFunction",
@@ -66,12 +66,12 @@
     },
     {
       "id": "iRobotWorkbenchShaderMode:Main",
-      "text": "機器人工作台高亮顯示模式",
+      "text": "Robot Workbench Highlight Mode",
       "type": "dropdown",
-      "help": "控制機器人工作台中使用的高亮顯示類型。",
+      "help": "Controls the type of highlight used in the robot workbench.",
       "valueOptions": {
         "sourceType": "ModSettingInt",
-        "options": ["完全關閉", "開啟（原版）", "只有輪廓"]
+        "options": ["Completely Off", "On (Vanilla)", "Outline Only"]
       },
       "action": {
         "type": "CallExternalFunction",
