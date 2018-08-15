@@ -1,7 +1,0 @@
-## Title: HarvestMap-EP-Zones
-## Author: Shinni
-## DependsOn: HarvestMap
-## AddOnVersion: 1
-## APIVersion: 100023 100024
-## SavedVariables: HarvestEP_SavedVars
-
