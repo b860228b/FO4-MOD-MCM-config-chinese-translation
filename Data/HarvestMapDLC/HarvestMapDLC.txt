@@ -1,0 +1,7 @@
+## Title: HarvestMap-DLC-Zones
+## Author: Shinni
+## DependsOn: HarvestMap
+## AddOnVersion: 1
+## APIVersion: 100023 100024
+## SavedVariables: HarvestDLC_SavedVars
+
